@@ -13,14 +13,16 @@ enum LedColours
 enum ButtonsSwitches
 {
   rightButton,        //would have value of int =0
-  leftButton
+  leftButton,
+  centerStick
 };
 
 //The buttons variables
 DigitalIn buttons[]
 {
-    DigitalIn(PTC6),//   0 button
-    DigitalIn(PTA4)
+    DigitalIn(PTC6),    // right sw3 button
+    DigitalIn(PTA4),    // left sw2 button
+    DigitalIn(D4)       //center joystick
 };
 
 //LED variables
